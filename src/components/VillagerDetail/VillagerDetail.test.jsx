@@ -12,7 +12,7 @@ const server = setupServer(
     (req, res, ctx) => {
       return res(
         ctx.json(
-          [{
+          {
             'name':'Admiral',
             'image':'https://vignette.wikia.nocookie.net/animalcrossing/images/e/ed/Admiral_NH.png/revision/latest?cb=20200802081138',
             'species':'bird',
@@ -22,7 +22,7 @@ const server = setupServer(
             'personality': 'cranky',
             
           }        
-          ])
+        )
       );
             
     }
@@ -39,7 +39,7 @@ describe('Villager Details', () => {
     screen.getByText('Loading...');
     return waitFor(async () => {
       const ul = await screen.findByTestId('1');
-      expect(ul.children.length).toEqual(18);
+      expect(ul.children.length).toEqual(16);
     });
   });
 });
