@@ -9,6 +9,6 @@ export const fetchVillagers = async (page) => {
 
 export const fetchVillager = async (_id) => {
   const res = await fetch(`https://ac-vill.herokuapp.com/villagers/${_id}`);
-
+  // console.log(res.json());
   return res.json();
 };

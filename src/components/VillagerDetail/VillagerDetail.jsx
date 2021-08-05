@@ -2,15 +2,16 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useVillager } from '../../state/customHooks';
 
-const VillagerDetails = () => {
-  const { id } = useParams();
-  const villager = useVillager(id);
-  if(!villager) return <h1>Loading...</h1>;
 
+const VillagerDetails = () => {
+  const { _id } = useParams();
+  const villager = useVillager(_id);
+  if(!villager) return <h1>Loading...</h1>;
+  
   return (
     <section>
       <h2>Villager Details</h2>
-      <dl>
+      <dl data-testid="1">
         <dt>Name</dt>
         <dd>{villager.name}</dd>
 

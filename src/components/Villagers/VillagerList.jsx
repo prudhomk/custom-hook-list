@@ -20,7 +20,7 @@ const VillagerList = () => {
     <>
       <button 
         disabled={page <= 1}
-        onClick={() => setPage((prevPage) => prevPage -1)}>
+        onClick={() => setPage((prevPage) => prevPage - 1)}>
                 &lt;
       </button> 
       {page}
