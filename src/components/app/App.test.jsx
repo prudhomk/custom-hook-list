@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -12,9 +12,10 @@ describe('App component', () => {
     );
 
     screen.getByText('Loading...');
-
-    const ul = await screen.findByRole('list');
-    expect(ul).not.toBeEmptyDOMElement();
+    return waitFor(async () => {
+      const ul = await screen.findByRole('list');
+      expect(ul).not.toBeEmptyDOMElement();
+    }, 1000);
   });
 
 
