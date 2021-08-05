@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Villager component renders Villager 1`] = `
+<DocumentFragment>
+  <figure>
+    <img
+      alt="Booger"
+      src="https://image.com/image.jpeg"
+    />
+    <figcaption>
+      <p>
+        Booger
+      </p>
+      <p>
+        Snot
+      </p>
+      <p>
+        Ooga Booga
+      </p>
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;
