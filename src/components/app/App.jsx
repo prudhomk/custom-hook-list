@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import VillagerList from '../villager/Villager';
+import VillagerList from '../Villagers/VillagerList';
 import VillagerDetails from '../VillagerDetail/VillagerDetail';
 
 export default function App() {

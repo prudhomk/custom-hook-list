@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useVillagers } from '../../state/customHooks';
-import Villager from '../Villager/Villager';
+import Villager from './Villager';
 
 const VillagerList = () => {
   const [page, setPage] = useState(1);
